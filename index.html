@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="css/bulma.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/animate.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/wow.min.js"></script>
         <script src="js/wow.js"></script>
@@ -29,8 +30,23 @@
                         </div>
                         <div id="navbarMenuHeroA" class="navbar-menu">
                             <div class="navbar-end">
-                                <div class="navbar-item has-dropdown wow fadeIn" data-wow-duration="2s">
-                                    <a class="navbar-link nav-item">Products</a>
+                                <div class="navbar-item is-hoverable wow fadeIn" data-wow-duration="2s">
+                                    <a class="navbar-link">Products</a>
+                                    <div class="navbar-dropdown">
+                                        <a class="navbar-item blacked">
+                                            About
+                                        </a>
+                                        <a class="navbar-item blacked">
+                                            Jobs
+                                        </a>
+                                        <a class="navbar-item blacked">
+                                            Contact
+                                        </a>
+                                        <hr class="navbar-divider is-black">
+                                        <a class="navbar-item blacked">
+                                            Report an issue
+                                        </a>
+                                    </div>
                                 </div>
                                 <a class="navbar-item nav-item wow fadeIn" data-wow-duration="2s">
                                     Enterprice Service
@@ -222,8 +238,8 @@
                     <div class="col-sm-4 position-text">
                         <div class="display-flex flex-direction-column">
                             <div class="table-footer">
-                                <h2 class="subtitle titleme-our3 wow fadeIn" data-wow-duration="2s">Produk</h2>
-                                <div class="wow fadeIn" data-wow-duration="4s">
+                                <h2 class="subtitle titleme-our3 wow fadeIn" data-wow-duration="3s">Produk</h2>
+                                <div class="wow fadeIn" data-wow-duration="6s">
                                     <h4 class="text-margin"><a href="#" class="text-dec"> Analysis</a></h4>
                                     <h4 class="text-margin"><a href="#" class="text-dec">Visual Intelligence</a></h4>
                                     <h4 class="text-margin"><a href="#" class="text-dec">Data Intelligence</a></h4>
@@ -235,8 +251,8 @@
                     <div class="col-sm-4 position-text">
                         <div class="display-flex flex-direction-column">
                             <div class="table-footer">
-                                <h2 class="subtitle titleme-our3 wow fadeIn" data-wow-duration="2s">Learn More</h2>
-                                <div class="wow fadeIn" data-wow-duration="4s">
+                                <h2 class="subtitle titleme-our3 wow fadeIn" data-wow-duration="3s">Learn More</h2>
+                                <div class="wow fadeIn" data-wow-duration="6s">
                                     <h4 class="text-margin"><a href="#" class="text-dec">Documentation</a></h4>
                                     <h4 class="text-margin"><a href="#" class="text-dec">FAQ</a></h4>
                                     <h4 class="text-margin"><a href="#" class="text-dec">Term of Use</a></h4>
@@ -249,8 +265,8 @@
                     <div class="col-sm-4 position-text">
                         <div class="display-flex flex-direction-column">
                             <div class="table-footer">
-                                <h2 class="text-left subtitle titleme-our3 wow fadeIn" data-wow-duration="2s">Contact Us</h2>
-                                <div class="wow fadeIn" data-wow-duration="4s">
+                                <h2 class="text-left subtitle titleme-our3 wow fadeIn" data-wow-duration="3s">Contact Us</h2>
+                                <div class="wow fadeIn" data-wow-duration="6s">
                                     <a href="#" class="text-dec">
                                         <h4 class="text-margin">Jl. Wisma 1 RT.02 RW.14</h4>
                                         <h4 class="text-margin">Sukarharjo, Jawa Tengah</h4>
@@ -266,7 +282,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-copyright wow slideInLeft" data-wow-duration="2s" data-wow-delay="-1s">
+                <div class="footer-copyright wow slideInLeft" data-wow-duration="3s" data-wow-delay="-1.5s">
                         &copy; 2018 palindrom.com ALL RIGHTS RESERVED 
                 </div>
             </div>
@@ -279,9 +295,19 @@
                 offset:       0,          // default
                 mobile:       true,       // keep it on mobile
                 live:         true        // track if element updates
-            })
+            });
             wow.init();
             new WOW().init();
+
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".navbar-burger").click(function(){
+                    $(".navbar-burger").toggleClass("is-active");
+                    $(".navbar-menu").toggleClass("is-active");
+                });
+            });
         </script>
     </body>
 </html>

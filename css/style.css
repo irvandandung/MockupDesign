@@ -148,6 +148,9 @@
   color: #139fc6;
   margin-bottom: 20px;
 }
+.blacked{
+  color: black !important;
+}
 .marginrow2{
   margin-bottom: 20px;
 }
