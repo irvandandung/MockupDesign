@@ -149,7 +149,11 @@
   margin-bottom: 20px;
 }
 .blacked{
-  color: black !important;
+  color: #139fc6 !important;
+}
+.blacked:hover{
+  color: white !important;
+  background: #139fc6 !important;
 }
 .marginrow2{
   margin-bottom: 20px;
@@ -227,5 +231,9 @@
   }
   .margin-sub{
     font-size: 10px;
+  }
+
+  .blacked{
+    color: white !important;
   }
 }
